@@ -1,0 +1,227 @@
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar!
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=black,
+    pdftitle={Nicolò Cavalieri - Resume}, % filename appearing on the webpage (i.e. Chrome, )
+    pdfauthor={Nicolò Cavalieri},
+    pdfsubject={CV},
+    pdfpagemode=UseNone,
+    citecolor=black,
+} 
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Nicolò Cavalieri's resume}
+\author{Nicolò Cavalieri}
+\date{\today}
+
+\pagestyle{empty}
+\usepackage{graphicx} % to handle figures/images
+\graphicspath{ {./images/} }
+
+\begin{document} 
+    
+    
+    \thispagestyle{empty}
+    %-------------------------------------------------------------
+    
+    \section*{Start}
+    
+    \simpleheader{headercolour}{Nicolò}{Cavalieri}{Mechatronics Engineer}{orange}
+    
+    
+    %------------------------------------------------
+    
+    % this has to be here so the paracols starts..
+    \subsection*{}
+    \vspace{4em}
+    
+    \setlength{\columnsep}{1.5cm}
+    \columnratio{0.23}[0.75]
+    \begin{paracol}{2}
+    \hbadness5000
+    %\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+    
+    \paracolbackgroundoptions
+    
+    % 0.9,0.9,0.9 -- 0.8,0.8,0.8
+    
+    
+    \footnotesize
+    {
+    \setasidefontcolour
+    \flushright
+    \begin{center}
+        \roundpic{images/me_graduationDay_bachelor_better.jpg}
+    \end{center}
+    
+    \bg{cvgreen}{white}{About me}\\[0.5em]
+        {\footnotesize 
+        I would like to take on roles that give me more and more autonomy because I am a person who knows how to take
+        responsibility. I would also like to apply the engineering
+        knowledge and skills acquired during my studies by working in the
+        design of control systems and programming for automatic
+        machines and \textbf{robots}, \textbf{autonomous vehicles} (distributed robotics,
+        \textbf{HIL}, \textbf{SIL}) and \textbf{embedded systems} in the \textbf{automotive} and
+        \textbf{aerospace/defense} sectors using \textbf{AI} and platforms such as \textbf{Qt/Qml},
+        \textbf{Yocto} and \textbf{Buildroot}.
+        }
+    \bigskip
+    
+    \bg{cvgreen}{white}{Personal} \\[0.5em]
+    \textbf{Nationality}: Italian \\
+    \textbf{Date of Birth}: 03/06/1997
+    \textbf{Desired Profession}: \par \textbullet\ Avionic Subsystem--FCS Eng. \par 
+    \textbullet\ Embedded SW / FW Eng. \par
+    \textbullet\ Robotics SW Eng.
+    
+    \bigskip
+    
+    \bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+    To complete ~•~ to do ~•~ to do ~•~ to do
+    
+    \bigskip
+    
+    \bigskip
+    
+    \bg{cvgreen}{white}{Non-academic Interests}\\[0.5em]
+    Snow, mountains, sea, basketball, tennis, football,...
+    \bigskip
+    
+    \bg{cvgreen}{white}{Academic/Tecnical Interests}\\[0.5em]
+    
+    \texttt{R} ~/~ \texttt{Android} ~/~ \texttt{Linux}
+    
+    \texttt{Data Science} ~/~ \texttt{AI, LLM} ~/~ \texttt{Robotics, Distributed Robotics}
+    
+    \texttt{Embedded Systems} ~/~ \texttt{Avionic subsystems, HMI} ~/~ \texttt{iOS}
+    
+    \vspace{4em}
+    
+    \infobubble{\faAt}{cvgreen}{white}{\href{https://nicolosh.github.io/}{Personal website}}
+    \infobubble{\faGithub}{cvgreen}{white}{\href{https://github.com/nicolosh}{GitHub profile}}
+    \infobubble{\faLinkedin}{cvgreen}{white}{\href{https://www.linkedin.com/in/nicolò-cavalieri-263774194/}{Linkedin profile}}
+        
+    \phantom{turn the page}
+    
+    \phantom{turn the page}
+    }
+    %-----------------------------------------------------------
+    \switchcolumn
+    
+    \small
+    \section*{Experience}
+    
+    \begin{tabular}{r| p{0.4\textwidth} c}
+        \cvevent{Jan 2025 -- Mar 2025}{Robotics Software Engineer}{Trento}{Condino (Borgochiese, Italy)\color{cvred}}{During my experience in \textbf{Polytec} I was responsible for developing and testing softwares to be applied to robotic islands designed for the steel industry. \par
+        
+        \textbf{Skills acquired and developed}: \par
+             \textbullet\ ability to interpret electrical, mechanical and fluid dynamics diagrams \par
+             \textbullet\ ability to perform IO tests \par
+             \textbullet\ auxiliary PLCs: developing PLC software in Ladder/KOP language and the 
+             parameterization and calibration of inverters \par
+             \textbullet\ programming of Siemens PLCs using TIA portal environment \par
+             \textbullet\ high-level structured programming languages (i.e. RAPID, PDL2) to create routines, tasks and commissioning activities of KUKA and ABB robots using their official IDEs \par
+             \textbullet\ development of HMIs throughout Ignition and WinCC softwares \par
+             \textbullet\ programming of Rockwell PLCs throughout Factory Talk \par
+             \textbullet\ interface with the rest of the robotics team to understand machine's requirements in relation to its intended application.}{images/BMgroup.png} \\
+        \cvevent{XX -- XXX}{To complete}{Y}{Z \color{cvred}}{Describe the job.}{images/logoUNITN.png}
+    \end{tabular}
+    
+    \vspace{3em}
+    
+    \begin{minipage}[t]{0.35\textwidth}
+    \section*{Degrees}
+    \begin{tabular}{r p{0.6\textwidth} c}
+        \cvdegree{1710}{Captain}{Certified}{Tortuga Uni \color{headerblue}}{}{images/me_graduationDay_bachelor_better.jpg} \\
+        \cvdegree{1715}{Bucaneering}{M.A.}{London \color{headerblue}}{}{images/me_graduationDay_bachelor_better.jpg} \\
+        \cvdegree{1720}{Bucaneering}{B.A.}{London \color{headerblue}}{}{images/me_graduationDay_bachelor_better.jpg}
+    \end{tabular}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.3\textwidth}
+
+    \section*{Programming}
+    \begin{tabular}{r @{\hspace{0.5em}}l}
+         \bg{skilllabelcolour}{iconcolour}{HTML, CSS} &  \barrule{0.5}{0.5em}{cvpurple}\\
+         \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.65}{0.5em}{cvgreen} \\
+         \bg{skilllabelcolour}{iconcolour}{Python} & \barrule{0.3}{0.5em}{cvpurple} \\
+         \bg{skilllabelcolour}{iconcolour}{C} & \barrule{0.5}{0.5em}{cvgreen} \\
+         \bg{skilllabelcolour}{iconcolour}{C++} & \barrule{0.3}{0.5em}{cvpurple} \\
+         \bg{skilllabelcolour}{iconcolour}{Matlab, Simulink} & \barrule{0.5}{0.5em}{cvpurple} \\
+         \bg{skilllabelcolour}{iconcolour}{Ruby, Embedded C} & \barrule{0.2}{0.5em}{cvpurple}
+    \end{tabular}
+    \end{minipage}
+    
+    \section*{Education}
+    \begin{tabular}{r| p{0.45\textwidth} c}
+        \cvevent{Sep 2021 -- Dec 2024}{Mechatronics Engineering, \ Electronics and Robotics Curriculum}{Trento}{Povo \color{cvred}}{Finally got the goddamn ship back.\lorem\lorem\lorem}{images/logoUNITN.png} \\
+        \cvevent{Sep 2016 -- Jul 2021}{Industrial Engineering, Mechatronics Curriculum}{Trento}{Povo \color{cvred}}{Found a secret treasure, lost the ship. \lorem\lorem}{images/logoUNITN.png}
+    \end{tabular}
+    \vspace{3em}
+    
+    \begin{minipage}[t]{0.3\textwidth}
+    \section*{Certifications}
+    \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
+        Apr 2025 & \href{https://www.linkedin.com/learning/certificates/0d2436d703664eda7f28df73ca4216c3d028e37f4785ed9bd46fb9feb3981d10}{Object--Oriented Programming with C++} \\
+        Apr 2025 & \href{https://www.linkedin.com/learning/certificates/b9326f397277b66a58dfcfd4ea7e9d1ea10154daa7fb4b5c6698e5a81c0a3251}{C programming for Embedded Applications} \\
+        May 2025 & \href{https://www.coursera.org/account/accomplishments/verify/6MX1VKYLQDJ7}{Getting started with Microsoft Excel} \\
+        % May 2025 & \href{}{Git Essential Training}
+    \end{tabular}
+    \bigskip
+    
+    \section*{Languages}
+    \begin{tabular}{l | ll}
+    \textbf{Italian} & C2 & {\phantom{x}\footnotesize Mother Tongue} \\
+    \textbf{French} & A2 & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny} \\
+    \textbf{English} & C1 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny}
+    \end{tabular}
+    \bigskip
+    
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.3\textwidth}
+    \section*{Publications}
+    \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
+        2010 & \emph{How I almost got killed by Lady Swan}, Tortuga Printing Press. \\
+        2011 & ``Privateering for Beginners'', in: \emph{The Pragmatic Pirate} (1/1720).
+    \end{tabular}
+    \bigskip
+    
+    \section*{Talks}
+    \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+        Nov. 2016 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
+    \end{tabular}
+    \end{minipage}
+      
+    \vfill{} % Whitespace before final footer
+    
+    %----------------------------------------------------------------------------------------
+    %	FINAL FOOTER
+    %----------------------------------------------------------------------------------------
+    \setlength{\parindent}{0pt}
+    \begin{minipage}[t]{\rightcolwidth}
+    \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+    {\small Nicolò Cavalieri \icon{\faEnvelopeO}{cvgreen}{} \href{mailto:nicolocavalieri.primo@gmail.com}{\textbf{nicolocavalieri.primo}@gmail.com} \icon{\faMapMarker}{cvgreen}{} Porto Mantovano, Mantua (Italy) \newline\icon{\faPhone}{cvgreen}{} +39 3471885928 \icon{\faAt}{cvgreen}{}\protect\url{https://nicolosh.github.io}
+    }
+    \end{center}
+    \end{minipage}
+    
+    \end{paracol}
+
+\end{document}
