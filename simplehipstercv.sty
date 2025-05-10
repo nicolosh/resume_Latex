@@ -50,9 +50,9 @@
 \titlespacing{\section}{0pt}{12pt}{5pt} % Spacing around titles {<left spacing>}{<before spacing>}{<after spacing>}
 %----------------------------------------------------
 
- \newcommand{\cvkeyword}[3]{
- \colorbox{#2}{\textcolor{#3}{#1}} \phantom{}%
- }
+\newcommand{\cvkeyword}[3]{
+  \colorbox{#2}{\textcolor{#3}{#1}} \phantom{}%
+}
  
 %------------------------
 \newcommand{\cvtag}[1]{% from alta-cv: https://www.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv
@@ -63,14 +63,14 @@
 %------------------- ICON Cross
 
 \newcommand{\iconcross}[7]{%
-\begin{tikzpicture}%
-\draw[ultra thick,draw=#2] (-2,-2) -- (2,2);%
-\draw[ultra thick, draw=#2] (-2,2) -- (2,-2);%
-\node[above=0.5em,text=#3] at (0,1) {#1 #4};%
-\node[below=0.5em,text=#3] at (0,-1) {#1 #5};%
-\node[right=0.5em,text=#3] at (1,0) {#1 #6};%
-\node[left=0.5em,text=#3] at (-1,0) {#1 #7};%
-\end{tikzpicture}%
+  \begin{tikzpicture}%
+  \draw[ultra thick,draw=#2] (-2,-2) -- (2,2);%
+  \draw[ultra thick, draw=#2] (-2,2) -- (2,-2);%
+  \node[above=0.5em,text=#3] at (0,1) {#1 #4};%
+  \node[below=0.5em,text=#3] at (0,-1) {#1 #5};%
+  \node[right=0.5em,text=#3] at (1,0) {#1 #6};%
+  \node[left=0.5em,text=#3] at (-1,0) {#1 #7};%
+  \end{tikzpicture}%
 }
  
 
@@ -121,8 +121,8 @@
 \newcommand{\icon}[3]{\phantom{x}{#3\color{#2}#1}\phantom{x}}
 %------------------- pictogram Fraction: pictoFraction
 \newcommand{\pictofraction}[6]{%
-\pgfmathparse{#3 - 1}\foreach \n in {0,...,\pgfmathresult}{\icon{#1}{#2}{#6}}%
-\pgfmathparse{#5 - 1}\foreach \n in {0,...,\pgfmathresult}{\icon{#1}{#4}{#6}}%
+  \pgfmathparse{#3 - 1}\foreach \n in {0,...,\pgfmathresult}{\icon{#1}{#2}{#6}}%
+  \pgfmathparse{#5 - 1}\foreach \n in {0,...,\pgfmathresult}{\icon{#1}{#4}{#6}}%
 }
 
 
@@ -136,17 +136,17 @@
 
 
 \newcommand{\skillbubble}[2]{%
-\begin{tikzpicture}%
-\draw[draw=none,fill=#1] (0,0) circle (0.#2);%
-\end{tikzpicture}%
+  \begin{tikzpicture}%
+  \draw[draw=none,fill=#1] (0,0) circle (0.#2);%
+  \end{tikzpicture}%
 }
 
 \newcommand{\hobbyicon}[5]{%
-\begin{tikzpicture}%
-\draw[draw=none,fill=#3] (0,0) circle (0.5);%
-\node[](icon) at (0,0) {#4#1};%
-\node[below=#5,align=center] at (icon) {#2};%
-\end{tikzpicture}
+  \begin{tikzpicture}%
+  \draw[draw=none,fill=#3] (0,0) circle (0.5);%
+  \node[](icon) at (0,0) {#4#1};%
+  \node[below=#5,align=center] at (icon) {#2};%
+  \end{tikzpicture}
 }
 
 
@@ -164,10 +164,10 @@
 
 
 \newcommand{\event}[5]{%
-{%
-\draw[draw=black, line width=0.2em,anchor=west] (0,#1) -- (#5,#1);%
-\node[fill=#2,right,inner sep=0.5em] 	at (#5,#1) {\textbf{#3}~~#4 };%
-} % startpunkt #1. Farbe #2, Detaildatum #3, Beschreibung #4, Entfernung von Timeline #5
+  {%
+  \draw[draw=black, line width=0.2em,anchor=west] (0,#1) -- (#5,#1);%
+  \node[fill=#2,right,inner sep=0.5em] 	at (#5,#1) {\textbf{#3}~~#4 };%
+  } % startpunkt #1. Farbe #2, Detaildatum #3, Beschreibung #4, Entfernung von Timeline #5
 }
 
 %---------------------------------------------------------
@@ -189,22 +189,22 @@
 % -----------------------------------------------------------------------------------
 
 \newcommand{\simpleheader}[5]{
-\tikz[remember picture,overlay] {%
-\node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=3.5cm](header) at (current page.north){};%
-\node[draw=none, align=left](name) at (header) {%
-{\Huge \color{#5} #2 \textbf{#3} }%
-};%
-\node[draw=none, below](description) at (name.south) {\color{white}#4};% 
-}\vspace{-0.7cm}%
+  \tikz[remember picture,overlay] {%
+  \node[rectangle, fill=#1, anchor=north, minimum width=\paperwidth, minimum height=3.5cm](header) at (current page.north){};%
+  \node[draw=none, align=left](name) at (header) {%
+  {\Huge \color{#5} #2 \textbf{#3} }%
+  };%
+  \node[draw=none, below](description) at (name.south) {\color{white}#4};% 
+  }\vspace{-0.7cm}%
 }
 
 
 \newcommand{\infobubble}[4]{
-\scalebox{1.3}{
-\begin{tikzpicture}
-\draw[draw=#2,fill=#2] (0,0) circle (0.2cm);
-\node[] at (0,0) {\color{#3}\textbf{#1}};
-\node[right=0.2cm] at (0,0) {\texttt{#4}};
-\end{tikzpicture}
-}
+  \scalebox{1.3}{
+  \begin{tikzpicture}
+  \draw[draw=#2,fill=#2] (0,0) circle (0.2cm);
+  \node[] at (0,0) {\color{#3}\textbf{#1}};
+  \node[right=0.2cm] at (0,0) {\texttt{#4}};
+  \end{tikzpicture}
+  }
 }
